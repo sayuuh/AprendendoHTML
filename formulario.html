@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="#" method="get" name="cadastro-usuario" target="_self"> <!--action é pra dar uma ação, seja para direcionar ou apontar qualquer coisa-->
+        <div class="containe-formulario">
+            <div class="box-title"><h2>Cadastro</h2>
+                <div class="box-input">
+                    <label for="input-id">ID</label>
+                    <input type="text" name="id" id="input.id" size="4" value="00001" disabled>
+                </div>
+            <div class="box-input"></div></div>
+            <label for="input-nome">Nome</label>
+            <input type="text" name="nome" id="nome" placeholder="Sendy Sayumi Hashimoto" autofocus>
+        </div> 
+        <div class="box-input">
+            <label for="password">Senha</label>
+            <input type="password" name="pass" id="password" required>
+        </div>
+        <div class="box-input">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required> <!--Required campo obrigatório-->
+        </div>
+        <fieldset>
+            <legend>Endereço</legend>
+            <div class="box-adress">
+                <label for="cep">CEP</label>
+                <input type="text" name="cep" id="cep" placeholder="12345-678" maxlength="9" size="10" required>
+            </div>
+            <div class="box-adress">
+                <label for="estado">Estado</label>
+                <select name="estado" id="estado">
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </select>
+            </div>
+            <div class="box-adress">
+                <label for="cidade">Cidade</label>
+                <input type="text" name="cidade" id="cidade" required>
+            </div>
+            <div class="box-adress">
+                <label for="bairro">Bairro</label>
+                <input type="text" name="bairro" id="bairro" required>
+            </div>
+            <div class="box-adress">
+                <label for="rua">Rua</label>
+                <input type="text" name="rua" id="rua" placeholder="Rua Jurua Nunes do Nascimento" required>
+                <label for="">n°</label>
+                <input type="number" name="numero" id="numero" placeholder="65" size="3" min="0" required>
+            </div>
+            <div class="box-adress">
+                <label for="complemento">Complemento</label>
+                <input type="text" name="complemento" id="complemento" placeholder="apto. 25" required>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Sexo</legend>
+            <div>
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="sexo" id="masculino" value="m">
+                <label for="feminino">Feminimo</label>
+                <input type="radio" name="sexo" id="feminimo" value="f">
+                <label for="outros">Outros</label>
+                <input type="radio" name="sexo" id="outros" value="o">
+            </div>
+        </fieldset>
+
+        <div class="box-buttons">
+            <input type="submit" value="Cadastrar">
+            <input type="reset" value="Limpar">
+        </div>
+        <div>
+            <h3>Cursos</h3>
+            <label for="html">HTML</label>
+            <input type="checkbox" name="cursos" id="html" value="html">
+            <label for="css">CSS</label>
+            <input type="checkbox" name="cursos" id="css" value="css">
+            <label for="js">JS</label>
+            <input type="checkbox" name="cursos" id="js" value="js">
+        </div>
+        <fieldset>
+            <legend>Data</legend>
+            <div class="box-data">
+            <label for="nasc">Nascimento</label>
+            <input type="date" name="nasc" id="nasc" required>
+        </div>
+        <div class="box-data">
+            <label for="agenda">Agendamento</label>
+            <input type="datetime-local" name="agenda" id="agenda" required>
+        </div>
+        <div class="box-data">
+            <label for="hora">Hora</label>
+            <input type="time" name="hora" id="hora" required>
+        </div>
+        <div class="box-data">
+            <label for="week">Semana</label>
+            <input type="week" name="week" id="week" required>
+        </div>
+        <div class="box-data">
+            <label for="mes">Mês</label>
+            <input type="month" name="mes" id="mes" required>
+        </div>
+        
+        </fieldset>
+        <FIeldset>
+            <legend>Outros</legend>
+            <div class="box-outros">
+                <label for="cor">Cor</label>
+                <input type="color" name="cor" id="cor" value="#ffffff">
+            </div>
+            <div class="box-outros">
+                <label>0%</label>
+                <label for="volume">Volume</label>
+                <input type="range" name="vol" id="vol" value="25" max="100" min="0">
+                <label>100%</label>
+            </div>
+            <div class="box-outros">
+                <label for="url">URL</label>
+                <input type="url" name="url" id="url" placeholder="https://www.instagram.com/">
+            </div>
+            <div class="box-outros">
+                <label for="search">Pesquisa</label>
+                <input type="search" name="search" id="search" placeholder="buscar">
+            </div>
+            <div class="box-outros">
+                <input type="file" name="arquivo" id="arquivo" accept="image/*" multiple> <!--imagem com asteristico aceita qualquer imagem-->
+            </div>
+        </FIeldset>
+        <fieldset>
+            <legend>Texto</legend>
+            <div>
+                <textarea name="texto" id="txt" cols="30" rows="10" wrap="hard" ></textarea>
+            </div>
+        </fieldset>
+        </form>
+
+    
+</body>
+</html>

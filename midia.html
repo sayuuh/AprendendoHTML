@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserindo Midia</title>
+</head>
+<body>
+    <h1>Audio</h1>
+    <h2>Simples</h2>
+    <audio src="Midia/audio/musica.mp3" autoplay controls loop></audio>
+
+    <h2>Compatibilidade</h2>
+    <audio controls preload="metadata"> <!--controls habilita o audio ou video no navegador-->
+        <source src="Midia/audio/musica.mp3" type="audio/mpeg">
+        <source src="Midia/audio/musica.ogg" type="audio/ogg">
+        <source src="Midia/audio/musica.wav" type="audio/wav">
+        <p>Desculpa, tivemos um problema!</p>
+    </audio>
+
+    <h2>Vídeo</h2>
+    <h3>Local</h3>
+    <h1>Gato</h1>
+    <h5>MP4</h5>
+    <video src="Midia/video/gato.mp4" poster="steam-avatar-profile-picture-0067.jpg" preload="metadata" controls loop autoplay></video> <!--POSTER muda a foto original do vídeo-->
+    <h2>Compatibilidade</h2>
+    <video preload="metadata" controls>
+        <source src="Midia/video/gatinho.mp4" type="video/mp4">
+        <source src="Midia/video/gatinho.m4v" type="video/m4v">
+        <source src="Midia/video/gatinho.webm" type="video/webm">
+        <p>Desculpa, tivemos um problema</p>   
+    </video>
+
+    <h3>Video do Servidor</h3>
+    <h4>Youtube</h4>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/T2C4kwwmZno" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h2>Incorporação</h2>
+    <h3>Páginas</h3>
+    <iframe src="texto.html" width="720" frameborder="0"></iframe>
+    <h3>PDF</h3>
+    <iframe src="lorem.pdf" width="1000" height="500" frameborder="0"></iframe>
+    <h3>SPOTIFY</h3>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3rmo8F54jFF8OgYsqTxm5d?utm_source=generator&theme=0" width="50%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+</body>
+</html>

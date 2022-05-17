@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+</head>
+<body>
+    <h1>Trabalhando com Tabelas</h1>
+    <h2>Simples</h2>
+    <table>
+        <tr> <!--Table Row-->
+            <th> </th> <!--Table Header-->
+            <th>Skincare</th>
+            <th>Tipos</th>
+        </tr>
+        <tr>
+            <td>Primeiro</td> <!--Table Data-->
+            <td>Hadalabo</td>
+            <td>Rosto</td>
+        </tr>
+        <tr>
+            <td>Segundo</td>
+            <td>Vanila Co.</td>
+            <td>Limpeza</td>
+        </tr>
+        <tr>
+            <th>Durabilidade</th>
+            <td>2 anos</td>
+            <td>1 ano</td>
+        </tr>
+    </table>
+
+    <h3>Tabela</h3>
+    <table>
+        <tr>
+            <th rowspan="2" colspan="2">LINHA/COLUNA</th>
+        
+            <th>COLUNA</th>
+            <th>COLUNA</th>
+            <th>COLUNA</th>
+        </tr>
+        <tr>
+            
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+        </tr>
+        <tr>
+            <td>LINHA</td>
+            <td>1</td>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr>
+            <td>LINHA</td>
+            <td>2</td>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr>
+            <td>LINHA</td>
+            <td>3</td>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        </table>
+    
+
+        <h2>Tabela Completa</h2>
+        <table> <!--Criação de tabela-->
+            <caption> <strong>10 Linguagens de programação mais usadas pelas empresas</strong></caption> <!--Título da Tabela-->
+        <thead> <!--Indica cabeçalho da Tabela-->
+            <tr>
+                <th scope="col">Ranking</th> <!--scope "col" valor da coluna e só serve no th-->
+                <th scope="col">Linguagem</th>
+                <th scope="col">Ano de Criação</th>
+            </tr>
+        </thead>
+        <tbody> <!--Corpo da Tabela-->
+            <tr>
+                <td>1</td>
+                <td>Python</td>
+                <td>1990</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>JavScripto (js)</td>
+                <td>1995</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Java</td>
+                <td>1995</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>TypeScript</td>
+                <td>2012</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Go</td>
+                <td>2009</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>C++</td>
+                <td>1980</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Ruby</td>
+                <td>1995</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>PHP</td>
+                <td>1994</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>C#</td>
+                <td>1999</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>C</td>
+                <td>1972</td>
+            </tr>
+        </tbody>
+        <tfoot> <!--Rodape-->
+            <tr>
+                <th colspan="2" scope="row">Total de Linguagens</th> <!--Colspan serve para mesclar colunas-->
+                <td> <strong>10</strong></td> <!--scope row da valor a linha-->
+            </tr>
+            <tr>
+                <td colspan="3"> <strong> Segundo levantamento do GitHub no último trimestre de 2021</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
