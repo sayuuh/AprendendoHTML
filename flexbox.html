@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /*DIV CONTAINER*/
+        .container{
+            height: 500px;
+            display: flex; /* Block deixa cada linha como bloco um embaixo do outro, Flex uma do lado da outra */
+            flex-wrap: nowrap; /* "rap" quebra de linha, "nowrap" sem quebra de linha */
+            justify-content: space-between; /* Alinhamento horizontal */
+            align-items: flex-start; /* Alinhamento vertical (stretch estica o tamanho do arquivo) */
+            flex-direction: column; /* ele muda para coluna, row = (padrão em linha) */
+        }
+        .box-container{
+            width: 20%;
+            background-color: cadetblue;
+            border: 2px solid black;
+        }
+        .box-container:nth-child(1){
+            order: 1;
+        }
+        .box-container:nth-child(2){
+            order: 3;
+        }
+        .box-container:nth-child(3){
+            order: 2; 
+            background-color: violet;
+        }
+        .box-container:nth-child(4){
+            order: 0;
+            background-color: burlywood;
+        }
+        .box-container1:nth-child(5){
+            order: 4;
+            background-color: burlywood;
+        }
+        /* MENU */
+        header{
+            background-color: cornflowerblue;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            padding: 20px;
+            align-items: center;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 16pt;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: all ease-in 0.5s; /* Efeito de transição */
+        
+        }
+        a:hover{
+            opacity: 0.5;
+            background-color: teal;
+            text-decoration: underline;
+            margin-left: 20px;
+        }
+        header nav ul{
+            display: flex;
+            font-size: 18pt;
+            list-style: none;
+        }
+        header nav ul li{
+            margin: 10px;
+            font-size: 10pt;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox</h1>
+    <h2>Exemplo 1</h2>
+    <div>
+        <div class="box-container">01</div> 
+        <div class="box-container">02</div>
+        <div class="box-container">03</div>
+        <div class="box-container">04</div>
+        <div class="box-container1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus velit labore iusto officia debitis! Possimus maiores, hic voluptas velit molestiae, magnam consequuntur, officiis laborum veniam quis iure at corrupti minus!</div>
+    </div>
+
+    <h2>Exemplo 2</h2>
+    <header>
+        <a href="">Logo</a>
+        <nav>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">CONTATO</a></li>
+                <li><a href="">SUPORTE</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
