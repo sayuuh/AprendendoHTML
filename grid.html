@@ -55,21 +55,22 @@
             grid-column: 1/4;
         }
 
-        /*YOUTUBE*/
+        /* YOUTUBE */
         .grid-youtube{
             display: grid;
             grid-template-columns: 65% 30%;
             justify-content: space-around;
-            align-items: center;
+            align-items: flex-start;
         }
-        .grid-youtube .youtube-item{
-           
-        }
+
+        /* PLAYER */
         .grid-youtube .youtube-item:nth-child(1){
-            
+            grid-row: 1/2;
+            border-bottom: 1px solid #c3c3c3;
         }
         .grid-youtube .youtube-item:nth-child(1) video{
             width: 100%;
+            grid-row: 1/2;
         }
         .grid-youtube .youtube-item:nth-child(1) h3{
             margin-top: 10px;
@@ -115,6 +116,64 @@
             text-align: justify;
             text-indent: 20px;
             margin-right: 10px;
+        }
+
+        /* INDICAÇÕES */
+        .grid-youtube .youtube-item:nth-child(2){
+            grid-row: 1/3;
+        }
+        .grid-youtube .youtube-item:nth-child(2) .ind{
+            display: flex;
+            height: 80px;
+            margin-bottom: 5px;
+            
+        }
+        .grid-youtube .youtube-item:nth-child(2) .ind .banner{
+            width: 40%;            
+        }
+        .grid-youtube .youtube-item:nth-child(2) .ind .banner img{
+            width: 100%;
+            height: 80px;
+            
+        }
+        .grid-youtube .youtube-item:nth-child(2) .ind .txtvideo{
+           width: auto;
+           margin-left: 5px;            
+        }
+        .grid-youtube .youtube-item:nth-child(2) .ind .txtvideo h4{
+           font-size: 11pt;
+           margin-bottom: 5px;         
+        }
+        .grid-youtube .youtube-item:nth-child(2) .ind .txtvideo p{
+           font-size: 08pt;
+           margin-bottom: 5px;         
+        }
+
+        /* MENSAGEM */
+        .grid-youtube .youtube-item:nth-child(3){
+            grid-column: 1;
+            grid-row: 2/3;
+        }
+        .grid-youtube .youtube-item:nth-child(3) .titulo{
+            width: 100%;
+        }
+        .grid-youtube .youtube-item:nth-child(3) .titulo span{
+            font-size: 14pt;
+            margin: 20px;
+        }
+        .grid-youtube .youtube-item:nth-child(3) .mensagem{
+            display: flex;
+            margin-top: 30px;
+        }
+        .grid-youtube .youtube-item:nth-child(3) .mensagem .perfil{
+            width: 10%;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .grid-youtube .youtube-item:nth-child(3) .mensagem .perfil img{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
         }
     </style>
 </head>
@@ -173,8 +232,141 @@
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, eius expedita, mollitia dolor dicta fugiat iste nemo deleniti provident autem aspernatur tenetur harum explicabo tempore quam consequuntur dignissimos quasi est.</p>
             </details>
         </div>
-        <div class="youtube-item">INDICAÇÃO</div>
-        <div class="youtube-item">COMENTÁRIOS</div>
+        <div class="youtube-item">
+            <div class="ind">
+                <div class="banner">
+                    <img src="Img/Luffy2.png" alt="">
+                </div>
+                <div class="txtvideo">
+                     <h4>TITULO DO VIDEO</h4>
+                     <p>NOME DO CANAL</p>   
+                     <p>81k visualizações - há 1 dia</p>   
+                </div>
+            </div>
+            <div class="ind">
+                <div class="banner">
+                    <img src="Img/Luffy2.png" alt="">
+                </div>
+                <div class="txtvideo">
+                     <h4>TITULO DO VIDEO</h4>
+                     <p>NOME DO CANAL</p>   
+                     <p>81k visualizações - há 1 dia</p>   
+                </div>
+            </div>
+            <div class="ind">
+                <div class="banner">
+                    <img src="Img/Luffy2.png" alt="">
+                </div>
+                <div class="txtvideo">
+                     <h4>TITULO DO VIDEO</h4>
+                     <p>NOME DO CANAL</p>   
+                     <p>81k visualizações - há 1 dia</p>   
+                </div>
+            </div>
+            <div class="ind">
+                <div class="banner">
+                    <img src="Img/Luffy2.png" alt="">
+                </div>
+                <div class="txtvideo">
+                     <h4>TITULO DO VIDEO</h4>
+                     <p>NOME DO CANAL</p>   
+                     <p>81k visualizações - há 1 dia</p>   
+                </div>
+            </div>
+            <div class="ind">
+                <div class="banner">
+                    <img src="Img/Luffy2.png" alt="">
+                </div>
+                <div class="txtvideo">
+                     <h4>TITULO DO VIDEO</h4>
+                     <p>NOME DO CANAL</p>   
+                     <p>81k visualizações - há 1 dia</p>   
+                </div>
+            </div>
+            <div class="ind">
+                <div class="banner">
+                    <img src="Img/Luffy2.png" alt="">
+                </div>
+                <div class="txtvideo">
+                     <h4>TITULO DO VIDEO</h4>
+                     <p>NOME DO CANAL</p>   
+                     <p>81k visualizações - há 1 dia</p>   
+                </div>
+            </div>
+            <div class="ind">
+                <div class="banner">
+                    <img src="Img/Luffy2.png" alt="">
+                </div>
+                <div class="txtvideo">
+                     <h4>TITULO DO VIDEO</h4>
+                     <p>NOME DO CANAL</p>   
+                     <p>81k visualizações - há 1 dia</p>   
+                </div>
+            </div>
+            <div class="ind">
+                <div class="banner">
+                    <img src="Img/Luffy2.png" alt="">
+                </div>
+                <div class="txtvideo">
+                     <h4>TITULO DO VIDEO</h4>
+                     <p>NOME DO CANAL</p>   
+                     <p>81k visualizações - há 1 dia</p>   
+                </div>
+            </div>
+            <div class="ind">
+                <div class="banner">
+                    <img src="Img/Luffy2.png" alt="">
+                </div>
+                <div class="txtvideo">
+                     <h4>TITULO DO VIDEO</h4>
+                     <p>NOME DO CANAL</p>   
+                     <p>81k visualizações - há 1 dia</p>   
+                </div>
+            </div>
+            <div class="ind">
+                <div class="banner">
+                    <img src="Img/Luffy2.png" alt="">
+                </div>
+                <div class="txtvideo">
+                     <h4>TITULO DO VIDEO</h4>
+                     <p>NOME DO CANAL</p>   
+                     <p>81k visualizações - há 1 dia</p>   
+                </div>
+            </div>
+        </div>
+        <div class="youtube-item">
+            <div class="titulo">
+                <span>1.000 comentários</span>
+                <span>ORDERNAR POR</span>
+            </div>
+            <div class="mensagem">
+                <div class="perfil">
+                    <img src="Img/icon.jpg" alt="">
+                </div>
+                <div class="msg">
+                    <h5>NOME DO PERFIL</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit voluptatum, voluptatem ipsa dicta explicabo ex earum facilis corrupti a neque quae blanditiis ipsam eum perferendis? Qui, excepturi? Praesentium, hic cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores fugiat error non? Architecto tempore quidem minima culpa excepturi officiis blanditiis consectetur dolore! Provident in aperiam libero, voluptate maxime rerum quibusdam.</p>
+                </div>
+            </div>
+            <div class="mensagem">
+                <div class="perfil">
+                    <img src="Img/icon.jpg" alt="">
+                </div>
+                <div class="msg">
+                    <h5>NOME DO PERFIL</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit voluptatum, voluptatem ipsa dicta explicabo ex earum facilis corrupti a neque quae blanditiis ipsam eum perferendis? Qui, excepturi? Praesentium, hic cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores fugiat error non? Architecto tempore quidem minima culpa excepturi officiis blanditiis consectetur dolore! Provident in aperiam libero, voluptate maxime rerum quibusdam.</p>
+                </div>
+            </div>
+            <div class="mensagem">
+                <div class="perfil">
+                    <img src="Img/icon.jpg" alt="">
+                </div>
+                <div class="msg">
+                    <h5>NOME DO PERFIL</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit voluptatum, voluptatem ipsa dicta explicabo ex earum facilis corrupti a neque quae blanditiis ipsam eum perferendis? Qui, excepturi? Praesentium, hic cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores fugiat error non? Architecto tempore quidem minima culpa excepturi officiis blanditiis consectetur dolore! Provident in aperiam libero, voluptate maxime rerum quibusdam.</p>
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 </html>
