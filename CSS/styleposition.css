@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    /* width: 100vw; - view width */
+    position: fixed;
+    background-color: violet;
+    padding: 10px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 24pt;
+}
+p{
+    width: 70%;
+    font-size: 18pt;
+    margin: auto;
+    text-align: justify;
+   
+}
+section{
+    /* height: 100%; */
+    height: 200vh;
+    background-color: black;
+}
+
+.chat{
+    /* position: static; */
+    /* position: relative; */
+    position: fixed; /* posição do icone fixa*/
+    border: 1px solid red;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    background-color: cadetblue;
+    border: 2px solid darkmagenta;
+    border-radius: 50%;
+}
+
+/* ABSOLUTE */
+.abs{
+    background-color: wheat;
+}
+.abs .col1{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: dimgray;
+}
+.abs .col2{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 350px;
+    left: 300px;
+    background-color: yellowgreen;
+}
