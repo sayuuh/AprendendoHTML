@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUNCAO</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        article{
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            margin: auto;
+        }
+
+        article section{
+            width: 50%;
+            height: 300px;
+            background-color: black;
+            color: white;
+            margin: 0 10px;
+            width: calc(50% - 20px);
+        }
+
+        main{
+            width: 500px;
+            width: max(70vw, 500px); /* PEGA O MAIOR */
+            width: min(50%, 500px); /* PEGA O MENOR */
+            height: 500px; /* PEGA O MAIOR */
+            background-color: tomato;
+            font-size: 10pt;
+        }
+
+        /* PESQUISAR: CLAMP */
+    </style>
+</head>
+<body>
+    <article>
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae illo praesentium nesciunt quod nihil asperiores necessitatibus omnis modi quo eius culpa provident, adipisci rem nobis, facilis velit aliquid reiciendis odit!</p>
+        </section>
+
+        <section>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste temporibus debitis quasi consectetur nobis neque officia suscipit quae, dolorum ex voluptate repudiandae atque vitae amet? Commodi, in error. Neque, facilis!</p>
+        </section>
+    </article>
+
+
+<main>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus corrupti quis neque vero explicabo iure officiis atque qui commodi? Quaerat excepturi praesentium aliquam dolore voluptatem vitae, qui ea quae saepe? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit minima sunt cupiditate? Dolorum perferendis voluptas voluptatem incidunt vitae repellendus corporis ut, nulla quam, et quod blanditiis quibusdam distinctio doloremque facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id harum, unde consequuntur est recusandae autem, perspiciatis ea doloribus atque impedit dolorum provident porro! Magnam hic dolorem repudiandae, sapiente minus tempore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi veniam officiis, facilis aut tempora aliquid aperiam possimus odit numquam consequatur vero vel rem fugit velit reprehenderit enim sit eaque. Suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente magni esse, ducimus perspiciatis rem temporibus distinctio magnam! Cumque minus suscipit earum excepturi rerum praesentium eius libero aliquid, tempore exercitationem deserunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias, ut? Unde, beatae dicta ratione quis illo recusandae similique libero a voluptatum quas, dignissimos maiores quam commodi alias ullam consequatur accusamus.</p>
+</main>
+</body>
+</html>

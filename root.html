@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Root</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap%27');
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        :root{
+            font-family: cursive;
+
+            --cor0: #e5e5e5;
+            --cor1: #fca311;
+            --cor2: #14213d;
+            --cor3: #000000;
+            --googlefonts: 'Roboto', sans-serif;
+        }
+
+        div{
+            width: 50vw;
+            height: 50vh;
+            background-color: var(--cor3);
+            color: var(--cor0);
+            margin: auto;
+        }
+        div p{
+            color: #fca311 !important; /* DA PRIORIDADE DE CONFIGURAÇÃO */
+        }
+        div p{
+            width: 90%;
+            height: 300px;
+            margin: auto;
+            font-family: var(--googlefonts);
+        }
+
+        /* REGRA DE PRIORIDADE E VALOR
+        div .class{
+
+        }
+        div p .class{
+
+        }
+        div #id{
+
+        } */
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repudiandae corporis neque nemo. Quae alias deserunt recusandae delectus incidunt temporibus repellat aut eaque earum sunt aspernatur, et officia! Libero, sit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit expedita accusantium praesentium suscipit illo eveniet accusamus eaque quasi rerum vel, molestias ipsam? Libero ad voluptas illum accusantium voluptatum consectetur. Maxime.</p>
+    </div>
+</body>
+</html>
